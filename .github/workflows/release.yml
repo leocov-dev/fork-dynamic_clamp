@@ -1,4 +1,4 @@
-name: publish docker image
+name: build release
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   build_artifacts:
-    runs-on: ubuntu-20.04
+    runs-on: macos-latest
     strategy:
       max-parallel: 1
       matrix:
